@@ -42,6 +42,11 @@ function App () {
       .then((result) => {
         setAlbumInfo(result?.data?.track?.album)
       })
+    handleOpen()
+  }
+
+  const handleOpen = () => {
+    setOpen(true)
   }
 
   const renderAlbumInfo = () => {
